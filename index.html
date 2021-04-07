@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body> 
+    <header><h1 id="title"> Dipas Raven Application Form. </h1>
+      <p id="description"> A form for people seeking a job at Dipas Raven</p>
+    </header>
+    <main>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label><br>
+      <input type="name" name="name" id="name" placeholder="Enter your name" required /><br>
+      <label for="email" id="email-label">Email</label><br>
+      <input type="email" name="email" id="email" placeholder=" Enter email address" required /><br>
+       <label for="number" id="number-label">Phone Number</label><br>
+      <input type="number" name="number" id="number" placeholder="Enter phone number " min="12" max="16"  /><br>
+      <label for="dropdown" id="dropdown-label">What would you be applying for?</label><br/>
+      <select id="dropdown">
+        <option value="Service-Engineer"> Service Engineer</option>
+        <option value="Logistics">Logistics Manager</option>
+        <option value="Adiminstration">Administration</option>
+        <option value="IT Consultant">IT Consultant</option>
+        <option value="Sales">Sales Person</option>
+      </select><br/>
+       <label for="radio" class="option">How many years of experience?</label><br/>
+       <input type="radio" name="Experience"value="less" id="radio" />Less that a year
+      </br>
+          <input type="radio" name="Experience" value="intermediate" id="radio" />1-4 years
+     </br>
+          <input type="radio" name="Experience" value="expert" id="radio" />5 and above
+     <br/>
+         <label for="checkbox" class="option">Are you familar with any of the following</label><br/>
+       <input type="checkbox" name="Familar"value="biolabo" id="checkbox" />Biolabo
+      </br>
+    <input type="checkbox" name="Familar"value="audicom" id="checkbox" />Audicom
+      </br>
+    <input type="checkbox" name="Familar"value="zybio" id="checkbox" />Zybio
+      </br>
+    <input type="checkbox" name="Familar"value="hematology" id="checkbox" />Hematology
+      </br>
+    <input type="checkbox" name="Familar"value="molbio" id="checkbox" />Molbio
+      </br>
+    <p>Additional Comments:</p>
+    <textarea>  Enter your commets here...</textarea>
+    <br/>
+    <input type="submit" value="Submit" id="submit" />
+    </form>
+      </main> 
+</body>
+</html>
